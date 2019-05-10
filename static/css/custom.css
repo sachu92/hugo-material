@@ -18,6 +18,11 @@ button {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
 }
 
+p {
+  line-height:1.5rem;
+  text-align: justify;
+  padding: 10px;
+}
 
 /**
  * Layout CSS
@@ -138,7 +143,7 @@ button {
  * Side drawer CSS
  */
 #sidedrawer-brand {
-  padding-left: 20px;
+  text-align: center;
 }
 
 #sidedrawer ul {
@@ -182,6 +187,35 @@ button {
   text-decoration: none;
 }
 
+/*
+ Material icons font
+*/
+.material-icons {
+  font-family: 'Material Icons';
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  color: #2196F3;
+
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+
+  /* Support for IE. */
+  font-feature-settings: 'liga';
+}
+
 .st-table{
   border-collapse: collapse;
   width: 100%;
@@ -211,3 +245,4 @@ button {
 li{
   padding: 6px;
 }
+
