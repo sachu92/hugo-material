@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+    {{- partial "head.html" . -}}
+    <body>
+        {{- partial "sidemenu.html" . -}}
+        {{- partial "header.html" . -}}
+        <div id="content-wrapper">
+          <div class="mui--appbar-height"></div>
+            <div class="mui-container-fluid">
+              <div class="mui-row">
+                <div class="mui-col-xs-12 mui-col-sm-10 mui-col-sm-offset-1 mui-col-md-8 mui-col-md-offset-2">
+                  {{- block "main" . }}{{- end }}
+                </div>
+              </div>
+            </div>
+          </div>
+        {{- partial "footer.html" . -}}
+    </body>
+</html>
