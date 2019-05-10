@@ -1,2 +1,4 @@
 # hugo-material
-Material design theme for Hugo based on MUI CSS
+A simple material design theme for [Hugo](https://gohugo.io/) based on [MUI CSS](https://www.muicss.com).
+
+
