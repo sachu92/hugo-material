@@ -1,9 +1,12 @@
 
 {{ define "main" }}
   <div class="mui-panel">
-    <h1> {{ .Title }}</h1>
-    <div class="mui-divider"></div>
+    <h1 class="mui--hidden-xs"> {{ .Title }}</h1>
+    <div class="mui-divider mui--hidden-xs"></div>
       <div style="height:40px; display:block; width:100%;"></div>
     {{ .Content }}
+  <div class="last-updated">
+    Last updated on {{ .Date.Format "January 2, 2006" }}
+  </div>
   </div>
 {{ end }}

@@ -1,39 +1,34 @@
 <div id="sidedrawer" class="mui--no-user-select mui--z2">
   <div id="sidedrawer-brand" class="mui--appbar-line-height">
-    <span class="mui--text-display1"><i class="material-icons">
-pages
-</i> </span>
+    <span class="mui--text-title"><strong> {{ .Site.Params.brand }}</strong></span>
   </div>
   <div class="mui-divider"></div>
     <ul>
         {{ $currentPage := . }}
         {{ range .Site.Menus.main }}
             {{ if .HasChildren }}
-                <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active{{ end }}">
+                <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active mui--z3{{ end }}">
                     <a href="#">
                         {{ .Pre }}
-                        <strong>{{ .Title }}</strong>
+                        {{ .Title }}
                     </a>
                 </li>
                 <ul class="sub-menu">
                     {{ range .Children }}
-                        <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+                        <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active mui--z3{{ end }}">
                             <a href="{{ .URL }}">{{ .Title }}</a>
                         </li>
                     {{ end }}
                 </ul>
             {{ else }}
-            <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active{{ end }}">
+            <li class="{{ if $currentPage.IsMenuCurrent "main" . }}active mui--z3{{ end }}">
                     <a href="{{ .URL }}">
                         {{ .Pre }}
-                        <strong>{{ .Title }}</strong>
+                        {{ .Title }}
                     </a>
                 </li>
             {{ end }}
         {{ end }}
-        <li>
-          <a href="#" target="_blank"><strong>CV</strong></a>
-        </li>
     </ul>
 </div>
 

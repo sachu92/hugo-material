@@ -12,7 +12,7 @@ body,
 input,
 textarea,
 button {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Roboto Slab', serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
@@ -129,7 +129,7 @@ p {
  * Footer CSS
  */
 #footer {
-  background-color: #0288D1;
+  background-color: #007ac1;
   color: #fff;
 }
 
@@ -144,6 +144,12 @@ p {
  */
 #sidedrawer-brand {
   text-align: center;
+  background-image: url(https://media.giphy.com/media/26BROrSHlmyzzHf3i/giphy.gif);
+  background-size: cover;
+  color: transparent;
+  -moz-background-clip: text;
+  -webkit-background-clip: text;
+  font-weight: bold;
 }
 
 #sidedrawer ul {
@@ -155,75 +161,36 @@ p {
 }
 
 #sidedrawer > ul > li:first-child {
-  padding-top: 15px;
+  margin-top: 15px;
 }
 
-#sidedrawer strong {
+#sidedrawer li {
+  padding: 0px;
+}
+
+#sidedrawer li a, #sidedrawer ul li a {
   display: block;
-  padding: 15px 22px;
   cursor: pointer;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 10px;
 }
 
-#sidedrawer strong:hover {
-  background-color: #E0E0E0;
-  color: #2196F3;
+#sidedrawer li:hover, #sidedrawer ul li:hover {
+  background-color: #67adff; /* Light in light blue 500 */
+}
+#sidedrawer li a:hover, #sidedrawer ul li a:hover {
+  color: #000;
 }
 
-#sidedrawer strong + ul > li {
-  padding: 6px 0px;
-}
-
-#sidedrawer > ul > li.active {
-  background-color: #2196F3;
+#sidedrawer > ul li.active {
+  background-color: #007ac1; /* Dark in light blue 500 */
   color: #fff;
 }
 
-#sidedrawer > ul > li.active > a{
+#sidedrawer > ul li.active > a{
   color: #fff;
   text-decoration: none;
-}
-
-#sidedrawer > ul > li > a{
-  text-decoration: none;
-}
-
-/*
- Material icons font
-*/
-.material-icons {
-  font-family: 'Material Icons';
-  font-weight: normal;
-  font-style: normal;
-  font-size: 24px;  /* Preferred icon size */
-  display: inline-block;
-  line-height: 1;
-  text-transform: none;
-  letter-spacing: normal;
-  word-wrap: normal;
-  white-space: nowrap;
-  direction: ltr;
-  color: #2196F3;
-
-  /* Support for all WebKit browsers. */
-  -webkit-font-smoothing: antialiased;
-  /* Support for Safari and Chrome. */
-  text-rendering: optimizeLegibility;
-
-  /* Support for Firefox. */
-  -moz-osx-font-smoothing: grayscale;
-
-  /* Support for IE. */
-  font-feature-settings: 'liga';
-}
-
-.st-table{
-  border-collapse: collapse;
-  width: 100%;
-}
-
-.st-table td, .st-table th{
-  border: 1px solid #000;
-  padding : 10px 10px 10px 10px;
 }
 
 .st-table tr:nth-child(even){
@@ -234,14 +201,6 @@ p {
   background-color: #ddd;
 }
 
-.st-table th{
-  padding-top: 12px;
-  padding-bottom: 12px;
-  text-align: left;
-  background-color: #2196F3;
-  color: #fff;
-}
-
 li{
   padding: 6px;
 }
@@ -249,4 +208,11 @@ li{
 .mui-panel{
   padding-left: 10%;
   padding-right: 10%;
+}
+.last-updated{
+  width: 100%;
+  text-align: right;
+  padding: 10px;
+  color: #bbb;
+  margin-top: 50px;
 }
