@@ -8,7 +8,7 @@
         {{ range .Site.Menus.main }}
             {{ if .HasChildren }}
                 <li class="{{ if $currentPage.HasMenuCurrent "main" . }}active mui--z3{{ end }}">
-                    <a href="#">
+                  <a href="{{ .URL }}">
                         {{ .Pre }}
                         {{ .Title }}
                     </a>

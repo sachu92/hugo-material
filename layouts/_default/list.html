@@ -1,5 +1,11 @@
 {{ define "main" }}
   <div class="mui-container-fluid">
     {{- .Content -}}
+    <!-- Ranges through content/posts/*.md -->
+    {{ range .Pages }}
+    <div class="mui-panel">
+            <a href="{{.Permalink}}">{{ .Title }}</a>
+    </div>
+    {{ end }}
   </div>
 {{ end }}
