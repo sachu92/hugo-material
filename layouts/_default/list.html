@@ -1,11 +1,17 @@
 {{ define "main" }}
   <div class="mui-container-fluid">
+    <h1 class="mui--hidden-xs"> {{ .Title }}</h1>
+    <div class="mui-divider mui--hidden-xs"></div>
+      <div style="height:20px; display:block; width:100%;"></div>
     {{- .Content -}}
-    <!-- Ranges through content/posts/*.md -->
+    <!-- Ranges through content/*/*.md -->
     {{ range .Pages }}
-    <div class="mui-panel">
-            <a href="{{.Permalink}}">{{ .Title }}</a>
+    <a href="{{ .Permalink }}">
+      <div class="panel-link">
+        <span>   {{ .Title }} </span> <br/>
+         <img src="/img/{{ .Params.img }}" />
     </div>
+    </a>
     {{ end }}
   </div>
 {{ end }}

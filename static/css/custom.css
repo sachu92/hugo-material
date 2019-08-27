@@ -216,3 +216,31 @@ li{
   color: #bbb;
   margin-top: 50px;
 }
+
+.panel-link{
+  display: table-cell;
+  background-color: #fff;
+  margin:10px;
+  border-radius: 5px;
+  text-align: center;
+  font-weight: bold;
+  color: #007ac1;
+  padding:1%;
+  width:45%;
+  float:left;
+}
+
+.panel-link span{
+  vertical-align: middle
+}
+
+.panel-link:hover{
+  background-color: #67adff;
+  color: #000;
+  text-decoration: none;
+}
+
+.panel-link img{
+  max-width:50%;
+  padding: 10px;
+}
